@@ -1,0 +1,36 @@
+.myHeader {
+    background: var(--primary-color-regular);
+
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: 26px;
+
+    color: white;
+
+    padding: 20px 30px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myLink {
+    color: white;
+    text-decoration: none;
+}
+
+.leftCorner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rightCorner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

@@ -1,0 +1,73 @@
+.myTableWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    min-width: 1411px;
+    max-height: 590px;
+    overflow: scroll;
+    border-radius: 15px 15px 0 0;
+}
+
+.myTable {
+    color: var(--primary-color-dark);
+    font-weight: bold;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    border-collapse: collapse;
+}
+.myThead {
+}
+
+.myThead th {
+    color: white;
+    border-bottom: 2px solid black;
+    padding: 20px;
+}
+
+.myTbody svg:hover {
+    opacity: 0.5;
+}
+
+.myTbody tr td {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    word-break: normal;
+
+    max-width: 250px;
+}
+
+.buttonCellGreen {
+    background: var(--secondary-color-regular) !important;
+    border: 2px solid black;
+}
+.buttonCellGreen:hover {
+    background: var(--secondary-color-light) !important;
+}
+
+.buttonCellBlue {
+    background: var(--primary-color-regular) !important;
+    transition: 0.5s;
+    border: 2px solid black;
+}
+.buttonCellBlue:hover {
+    transition: 0.5s;
+    background: var(--primary-color-light) !important;
+}
+
+.green tr td {
+    background: var(--secondary-color-light);
+}
+
+.green th {
+    background: var(--secondary-color-dark);
+}
+
+.blue tr td {
+    background: var(--primary-color-regular);
+}
+
+.blue th {
+    background: var(--primary-color-dark);
+}

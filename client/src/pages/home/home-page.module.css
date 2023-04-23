@@ -1,0 +1,7 @@
+.homePageWrapper {
+    display: flex;
+    justify-content: center;
+
+    gap: 200px;
+    border-radius: 15px;
+}

@@ -1,0 +1,21 @@
+.myInput {
+    border-radius: 15px;
+
+    padding: 10px;
+
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.myInput::placeholder {
+    color: black;
+}
+
+.myInput:invalid {
+    border: solid 2px red;
+}
+
+.myInput:focus {
+    outline: none;
+    border: solid 3px black;
+}
