@@ -19,6 +19,7 @@ const initialState = {
         reproduce_ability: 0,
         gender: "Male",
         pet_breed: "",
+        img_url: "",
     },
     mode: "Create",
 };

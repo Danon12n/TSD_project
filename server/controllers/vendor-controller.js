@@ -30,6 +30,7 @@ class vendorController {
                 reproduce_ability,
                 gender,
                 pet_breed,
+                img_url,
             } = request.body;
             await dbPets
                 .addPetInfo({
@@ -42,6 +43,7 @@ class vendorController {
                     reproduce_ability,
                     gender,
                     pet_breed,
+                    img_url,
                 })
                 .then((data) => {
                     console.log(data);
