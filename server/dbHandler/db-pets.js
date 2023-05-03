@@ -38,7 +38,7 @@ class PetMySQLRep extends MySQLRep {
                     pet_info 
                 SET pet_type=\'${payload.pet_type}\', name=\'${payload.name}\', age=${payload.age}, color=\'${payload.color}\',
                 can_swim=${payload.can_swim},reproduce_ability=${payload.reproduce_ability},
-                gender=\'${payload.gender}\',pet_breed=\'${payload.pet_breed}\' WHERE pet_id =${payload.pet_id}  `
+                gender=\'${payload.gender}\',pet_breed=\'${payload.pet_breed}\',img_url=\'${payload.img_url}\' WHERE pet_id =${payload.pet_id}  `
             )
             .then((res) => {
                 return res[0];
@@ -99,7 +99,8 @@ class PetMySQLRep extends MySQLRep {
             .execute(
                 `Insert into pet_info (pet_id, pet_type, name, age, color, can_swim, reproduce_ability, gender, 
                 pet_breed) values (${payload.pet_id}, \'${payload.pet_type}\', \'${payload.name}\', ${payload.age},
-                \'${payload.color}\', ${payload.can_swim}, ${payload.reproduce_ability}, \'${payload.gender}\', \'${payload.pet_breed}\') `
+                \'${payload.color}\', ${payload.can_swim}, ${payload.reproduce_ability},
+                \'${payload.gender}\', \'${payload.pet_breed}\',img_url=\'${payload.img_url}\') `
             )
             .then((res) => {
                 return res[0];
