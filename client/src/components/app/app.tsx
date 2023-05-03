@@ -7,6 +7,7 @@ import { HomePage } from "../../pages/home/home-page";
 import ProtectedRoute from "../protected-route/protected-route";
 import { LoginPage } from "../../pages/login/login-page";
 import { RegisterPage } from "../../pages/register/register-page";
+import { CustomerMenuPage } from "../../pages/customer/customer-page";
 
 const App: FC = () => {
     return (
@@ -18,14 +19,14 @@ const App: FC = () => {
                         <HomePage />
                     </Route>
                     <ProtectedRoute path='/customer' exact isRequiredAuthed>
-                        <></>
+                        <CustomerMenuPage />
                     </ProtectedRoute>
                     <ProtectedRoute
                         path='/customer/orders'
                         exact
                         isRequiredAuthed
                     >
-                        <></>
+                        <CustomerMenuPage />
                     </ProtectedRoute>
                     <ProtectedRoute path='/vendor' exact isRequiredAuthed>
                         <></>
