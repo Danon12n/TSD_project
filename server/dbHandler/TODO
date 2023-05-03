@@ -1,0 +1,6 @@
+server
+-auth + register
+-getallpets +
+-my orders + all orders +refuse + close
+-search with filters
+-createpet
