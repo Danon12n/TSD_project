@@ -1,8 +1,8 @@
 const CONNECTION_INFO = {
     host: "localhost",
-    user: "root",
+    user: "serverUser",
     database: "pet_shop",
-    password: "root",
+    password: "serverPassword",
 };
 
 module.exports = CONNECTION_INFO;
