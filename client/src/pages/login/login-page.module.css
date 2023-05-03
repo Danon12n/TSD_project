@@ -1,0 +1,42 @@
+.LoginPageContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    background: var(--primary-color-regular);
+
+    border-radius: 15px;
+
+    padding: 26px 55px;
+    gap: 40px;
+}
+
+.LoginPageContent p {
+    font-weight: bold;
+    font-size: 48px;
+    color: white;
+    font-family: "Noto Sans";
+    margin: 0;
+}
+
+.inputsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 38px;
+}
+.buttonsWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+    width: 100%;
+}
+
+.Link {
+    text-decoration: none;
+    color: white;
+}
