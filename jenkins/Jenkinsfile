@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Докачка библиотек') {
+            steps {
+                echo 'Докачивание модулей'
+                sh '''#!/bin/bash
+
+                    cd client
+                    npm i
+                    cd ..
+                    cd server
+                    npm i
+                '''
+            }
+        }
+        stage('Тестирование') {
+            steps {
+                echo 'Выполняем команды для тестирования'
+                sh '''#!/bin/bash
+                cd client
+                npm test
+                '''
+            }
+        }
+        stage('Сборка') {
+            steps {
+                echo 'Выполняем команды для сборки'
+                sh '''#!/bin/bash
+                    cd client
+                    npm run build
+                '''
+            }
+        }
+    }
+}
+
