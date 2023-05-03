@@ -6,6 +6,7 @@ import { TPet, TStore } from "../../types/types";
 import { useSelector } from "react-redux";
 import { boundPets } from "../../services/actions/pets";
 import { TPetsState } from "../../services/reducers/pets/pets";
+import { Filter } from "../../components/filter/filter";
 
 const HomePage: FC = () => {
     const { filteredPets } = useSelector<TStore, TPetsState>(
@@ -26,6 +27,7 @@ const HomePage: FC = () => {
 
     return (
         <div className={styles.homePageWrapper}>
+            <Filter />
             <CardsList pets={[...filteredPets]} />
         </div>
     );
