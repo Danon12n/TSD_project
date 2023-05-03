@@ -1,0 +1,55 @@
+.CustomerMenuPageContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    background: var(--primary-color-regular);
+
+    border-radius: 15px;
+
+    padding: 26px 55px;
+    gap: 40px;
+}
+
+.CustomerMenuPageContent p {
+    font-weight: bold;
+    font-size: 48px;
+    color: white;
+    font-family: "Noto Sans";
+    margin: 0;
+}
+
+.infoLine {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    font-weight: bold;
+    width: 100%;
+}
+
+.infoLine p {
+    font-size: 26px;
+    display: flex;
+    margin-right: 30px;
+}
+
+.infoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttonsWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.Link {
+    text-decoration: none;
+}
