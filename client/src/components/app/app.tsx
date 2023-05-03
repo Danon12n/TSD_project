@@ -8,6 +8,7 @@ import ProtectedRoute from "../protected-route/protected-route";
 import { LoginPage } from "../../pages/login/login-page";
 import { RegisterPage } from "../../pages/register/register-page";
 import { CustomerMenuPage } from "../../pages/customer/customer-page";
+import { AdminMenuPage } from "../../pages/admin/admin-page";
 
 const App: FC = () => {
     return (
@@ -49,7 +50,7 @@ const App: FC = () => {
                         <></>
                     </ProtectedRoute>
                     <ProtectedRoute path='/admin' exact isRequiredAuthed>
-                        <></>
+                        <AdminMenuPage />
                     </ProtectedRoute>
                     <ProtectedRoute path='/register' exact>
                         <RegisterPage />
