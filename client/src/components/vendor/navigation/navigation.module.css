@@ -1,0 +1,13 @@
+.buttonsWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 600px;
+    gap: 50px;
+}
+
+.myLink {
+    text-decoration: none;
+    color: white;
+}
