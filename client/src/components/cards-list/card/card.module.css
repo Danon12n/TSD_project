@@ -1,0 +1,27 @@
+.cardWrapper {
+    background: var(--primary-color-regular);
+    border-radius: 15px;
+
+    color: white;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 359px;
+    height: 650px;
+}
+
+.cardOption {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+
+    font-weight: bold;
+}
+
+.cardOption p {
+    margin: 10px;
+}

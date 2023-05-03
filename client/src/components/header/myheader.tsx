@@ -2,12 +2,15 @@ import { FC } from "react";
 import styles from "./myheader.module.css";
 import { ProfileIcon } from "../ui/icons/icons";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { TUserState } from "../../services/reducers/user/user";
+import { TStore } from "../../types/types";
 
-const MyHeader: FC = () => {
-    const user = {
-        role: "admin",
-    };
-    const type: string = "admin";
+interface MyHeaderProps {}
+
+const MyHeader: FC<MyHeaderProps> = () => {
+    const { user } = useSelector<TStore, TUserState>((store) => store.user);
+    const type = user.role;
     return (
         <div className={`${styles.myHeader}`}>
             <div className={`${styles.content}`}>
