@@ -2,6 +2,7 @@ import { FC, HTMLInputTypeAttribute } from "react";
 import styles from "./myinput.module.css";
 
 interface MyInputProps {
+    id?: string;
     placeholder?: string;
     type?: HTMLInputTypeAttribute;
     required?: boolean;
@@ -11,6 +12,7 @@ interface MyInputProps {
 }
 
 const MyInput: FC<MyInputProps> = ({
+    id,
     placeholder,
     type,
     required,
@@ -20,6 +22,7 @@ const MyInput: FC<MyInputProps> = ({
 }) => {
     return (
         <input
+            id={id}
             type={type}
             required={required}
             name={name}

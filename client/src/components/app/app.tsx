@@ -5,6 +5,8 @@ import { MyHeader } from "../header/myheader";
 import { MyFooter } from "../footer/myfooter";
 import { HomePage } from "../../pages/home/home-page";
 import ProtectedRoute from "../protected-route/protected-route";
+import { LoginPage } from "../../pages/login/login-page";
+import { RegisterPage } from "../../pages/register/register-page";
 
 const App: FC = () => {
     return (
@@ -49,10 +51,10 @@ const App: FC = () => {
                         <></>
                     </ProtectedRoute>
                     <ProtectedRoute path='/register' exact>
-                        <></>
+                        <RegisterPage />
                     </ProtectedRoute>
                     <ProtectedRoute path='/login' exact>
-                        <></>
+                        <LoginPage />
                     </ProtectedRoute>
                 </Switch>
             </div>
