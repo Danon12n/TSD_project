@@ -49,11 +49,9 @@ export type TUserClient = {
     surname: string;
     telephone: string;
     login: string;
-    role: TUserRole;
+    role: "admin" | "vendor" | "customer" | "notAuthorized";
     shop_address: string;
 };
-
-export type TUserRole = "admin" | "vendor" | "customer" | "notAuthorized";
 
 export type TOrderServer = {
     pet_id: number;
@@ -65,9 +63,18 @@ export type TOrder = {
     petId: number;
 };
 
-export type TPetType = "Cat" | "Dog" | "Hedgehog" | "Raccoon" | "Fox";
+export type TPetType =
+    | "Черепаха"
+    | "Коала"
+    | "Ленивец"
+    | "Улитка"
+    | "Ядозуб"
+    | "Лори"
+    | "Слизень"
+    | "Морская звезда"
+    | "Морской конек";
 export type TPetAvailability = "yes" | "no";
-export type TPetGender = "Male" | "Female";
+export type TPetGender = "Самка" | "Самец" | "Не определен";
 
 export type TPet = {
     pet_id: number;
@@ -82,6 +89,7 @@ export type TPet = {
     reproduce_ability: 0 | 1;
     gender: TPetGender;
     pet_breed: string;
+    img_url: string;
     shop_address?: string;
     shop_phone?: string;
     order_number?: number;
