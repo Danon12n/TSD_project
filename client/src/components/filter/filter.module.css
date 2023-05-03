@@ -1,0 +1,45 @@
+.filterWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: var(--primary-color-regular);
+    border-radius: 15px;
+    max-width: 441px;
+    max-height: 800px;
+    padding: 10px 24px;
+
+    gap: 10px;
+}
+
+.filterTitle {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.priceWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+.priceWrapper p {
+    margin: 10px;
+}
+
+.inputsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 10px;
+}
