@@ -1,12 +1,12 @@
-// import { TPetCreatorState } from "../services/reducers/pet-creator/pet-creator";
-// import { TPetsState } from "../services/reducers/pets/pets";
-// import { TUserState } from "../services/reducers/user/user";
+import { TPetCreatorState } from "../services/reducers/pet-creator/pet-creator";
+import { TPetsState } from "../services/reducers/pets/pets";
+import { TUserState } from "../services/reducers/user/user";
 
-// export type TStore = {
-//     user: TUserState;
-//     pets: TPetsState;
-//     petCreator: TPetCreatorState;
-// };
+export type TStore = {
+    user: TUserState;
+    pets: TPetsState;
+    petCreator: TPetCreatorState;
+};
 
 export type TTableData = {
     head: string[];
