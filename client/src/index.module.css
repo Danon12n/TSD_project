@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+html {
+    font-family: "Noto Sans";
+    font-size: 26px;
+}
+
+:root {
+    --primary-color-light: #cbe1f5;
+    --primary-color-regular: #84b3e0;
+    --primary-color-dark: #3e6a9d;
+    --secondary-color-light: #bcde9a;
+    --secondary-color-regular: #7fae5a;
+    --secondary-color-dark: #436d29;
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: var(--primary-color-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color-dark);
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--primary-color-light);
+}
